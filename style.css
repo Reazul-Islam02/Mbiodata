@@ -1,0 +1,123 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 8.5in;
+            height: 11in;
+            background-color: white;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #8B6914;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .left-column {
+            flex: 1;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+        .section-header {
+            background-color: #D4A574;
+            padding: 8px 12px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 12px;
+            border: 1px solid #B8956A;
+        }
+
+        .profile-picture {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background-color: #e0e0e0;
+            border: 2px solid #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 12px;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .detail-row {
+            display: flex;
+            margin-bottom: 6px;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            width: 120px;
+            color: #333;
+        }
+
+        .detail-value {
+            flex: 1;
+            color: #333;
+        }
+
+        .separator {
+            color: #999;
+            margin: 0 5px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 40px;
+            }
+        }
+
+
+    
